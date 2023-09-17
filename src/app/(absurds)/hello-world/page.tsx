@@ -3,13 +3,7 @@
 import Code from "@/components/commons/code.common";
 import LayoutQuote from "@/components/commons/layout_quote.common";
 import NavbarCustom from "@/components/commons/navbar.common";
-import { Metadata } from "next"
 import { darcula } from "react-syntax-highlighter/dist/esm/styles/prism";
-
-export const metadata: Metadata = {
-    title: "Hello World",
-    description: "Hello world sek!"
-}
 
 export default function HelloWorld() {
     const helloWorldString: string =
