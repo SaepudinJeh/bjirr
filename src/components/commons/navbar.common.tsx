@@ -14,9 +14,9 @@ export default function NavbarCustom({ children }: NavbarProps) {
     const { theme, setTheme } = useTheme();
 
     const menuItems: string[] = [
-        "Features",
-        "Customers",
-        "Integrations",
+        "Verhalen",
+        "Absurditeiten",
+        "Uitstekend",
     ];
 
     return (
@@ -36,21 +36,14 @@ export default function NavbarCustom({ children }: NavbarProps) {
                     <NavbarBrand>
                         <p className="font-bold text-fill-inherit text-xl mr-10">Bjirrr</p>
                     </NavbarBrand>
-                    <NavbarItem>
-                        <Link href="#" className="text-black dark:text-white">
-                            Features
-                        </Link>
-                    </NavbarItem>
-                    <NavbarItem isActive>
-                        <Link href="#" className="text-black dark:text-white">
-                            Customers
-                        </Link>
-                    </NavbarItem>
-                    <NavbarItem>
-                        <Link href="#" className="text-black dark:text-white">
-                            Integrations
-                        </Link>
-                    </NavbarItem>
+
+                    { menuItems?.map((item, index) => (
+                        <NavbarItem key={index}>
+                            <Link href="#" className="text-black dark:text-white">
+                                { item }
+                            </Link>
+                        </NavbarItem>
+                    )) }
                 </NavbarContent>
 
 
@@ -61,13 +54,10 @@ export default function NavbarCustom({ children }: NavbarProps) {
                 </NavbarContent>
 
                 <NavbarMenu>
-                    {menuItems.map((item, index) => (
+                    {menuItems?.map((item, index) => (
                         <NavbarMenuItem key={`${item}-${index}`}>
                             <Link
-                                color={
-                                    index === 2 ? "primary" : index === menuItems.length - 1 ? "danger" : "foreground"
-                                }
-                                className="w-full"
+                                className="w-full text-black dark:text-white"
                                 href="#"
                                 size="lg"
                             >

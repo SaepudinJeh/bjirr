@@ -3,9 +3,13 @@
 import Code from "@/components/commons/code.common";
 import LayoutQuote from "@/components/commons/layout_quote.common";
 import NavbarCustom from "@/components/commons/navbar.common";
-import { darcula } from "react-syntax-highlighter/dist/esm/styles/prism";
+import { useTheme } from "next-themes";
+import { darcula, gruvboxLight } from "react-syntax-highlighter/dist/esm/styles/prism";
 
 export default function HelloWorld() {
+    const { theme } = useTheme();
+
+
     const helloWorldString: string =
         `package main
 
@@ -16,16 +20,21 @@ func main() {
 }
 `;
 
+    const themeCode = theme === "dark" ? gruvboxLight : darcula;
+
     return (
         <main>
             <NavbarCustom>
                 <LayoutQuote>
-                    <Code language="go" style={darcula} showLineNumbers showInlineLineNumbers>
+                    <Code language="go" style={themeCode} showLineNumbers showInlineLineNumbers>
                         {helloWorldString}
                     </Code>
 
                     <div className="text-center mt-10">
-                        <h1 className="font-semibold italic">Hello Word</h1>
+                        <div className="mb-2">
+                            <h1 className="font-semibold italic">Hello Word</h1>
+                            <span className="text-xs text-gray-600">Bonjour le monde</span>
+                        </div>
                         <p className="text-sm">
                             Menurutku sebuah frasa yang unik untuk menyambut <i>hal yang baru </i>
                             entah itu seseorang, harapan, keinginan. Ahkk... ribet manusia cuma
