@@ -19,7 +19,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`light ${comfortaa.variable} ${sevillana.variable} ${javanese.variable}`}>
+      <body className={`${comfortaa.variable} ${sevillana.variable} ${javanese.variable}`}>
         <NextUiProviders>
           {children}
         </NextUiProviders>
