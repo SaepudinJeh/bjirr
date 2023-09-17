@@ -1,8 +1,11 @@
-import './globals.css'
+import { NextUiProviders } from '@/providers/nextui.provider';
+import '@/styles/globals.css'
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { Comfortaa, Sevillana, Noto_Sans_Javanese } from 'next/font/google'
 
-const inter = Inter({ subsets: ['latin'] })
+const comfortaa = Comfortaa({ subsets: ['latin', "cyrillic"], display: "swap", variable: "--font-comfortaa" });
+const sevillana = Sevillana({ subsets: ['latin'], display: "swap", weight: "400", variable: "--font-sevillana" })
+const javanese = Noto_Sans_Javanese({ subsets: ["javanese"], display: "swap", variable: "--font-javanese" });
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -16,7 +19,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={`${comfortaa.variable} ${sevillana.variable} ${javanese.variable}`}>
+        <NextUiProviders>
+          {children}
+        </NextUiProviders>
+      </body>
     </html>
   )
 }
