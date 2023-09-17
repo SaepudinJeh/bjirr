@@ -5,10 +5,6 @@ import React, { useEffect, useState } from "react";
 import { Switch } from "@nextui-org/react";
 import { useTheme } from "next-themes";
 
-interface SwitchDarkModeProps {
-    // Define any props you want to pass to this component
-}
-
 export default function SwitchDarkMode() {
     const [mounted, setMounted] = useState<boolean>(false);
     const { theme, setTheme } = useTheme();
