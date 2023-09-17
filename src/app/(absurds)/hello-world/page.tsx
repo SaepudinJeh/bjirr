@@ -24,7 +24,7 @@ func main() {
                         {helloWorldString}
                     </Code>
 
-                    <div className="text-center mt-10">
+                    {/* <div className="text-center mt-10">
                         <h1 className="font-semibold italic">Hello Word</h1>
                         <p className="text-sm">
                             Menurutku sebuah frasa yang unik untuk menyambut <i>hal yang baru </i>
@@ -36,7 +36,7 @@ func main() {
                         <p className="text-xs mt-5 text-gray-500 italic">
                             Intinya terserah kamu!
                         </p>
-                    </div>
+                    </div> */}
                 </LayoutQuote>
             </NavbarCustom>
         </main>

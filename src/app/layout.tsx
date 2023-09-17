@@ -18,8 +18,8 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
-      <body className={`${comfortaa.variable} ${sevillana.variable} ${javanese.variable}`}>
+    <html lang="en" suppressHydrationWarning>
+      <body className={`dark ${comfortaa.variable} ${sevillana.variable} ${javanese.variable}`}>
         <NextUiProviders>
           {children}
         </NextUiProviders>

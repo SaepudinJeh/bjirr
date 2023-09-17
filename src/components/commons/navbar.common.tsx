@@ -1,7 +1,8 @@
 "use client"
 import React from "react";
 
-import { Navbar, NavbarBrand, NavbarContent, NavbarItem, Link, Button } from "@nextui-org/react";
+import { Navbar, NavbarBrand, NavbarContent, NavbarItem, Link } from "@nextui-org/react";
+import SwitchDarkMode from "../buttons/dark_mode.button";
 
 interface NavbarProps {
     children: React.ReactNode
@@ -32,13 +33,8 @@ export default function NavbarCustom({ children }: NavbarProps) {
                     </NavbarItem>
                 </NavbarContent>
                 <NavbarContent justify="end">
-                    {/* <NavbarItem className="hidden lg:flex">
-                        <Link href="#">Login</Link>
-                    </NavbarItem> */}
                     <NavbarItem>
-                        <Button as={Link} color="primary" href="/" variant="flat">
-                            Ini tombol
-                        </Button>
+                        <SwitchDarkMode />
                     </NavbarItem>
                 </NavbarContent>
             </Navbar>
