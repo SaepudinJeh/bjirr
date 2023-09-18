@@ -14,14 +14,15 @@ export default function NavbarCustom({ children }: NavbarProps) {
     const { theme, setTheme } = useTheme();
 
     const menuItems: string[] = [
-        "Verhalen",
-        "Absurditeiten",
-        "Uitstekend",
+        "Verhalen", // Stories
+        "Absurditeiten", // Absurdities
+        "Uitstekend", // Outstanding,
+        "Chatten", // chats
     ];
 
     return (
         <>
-            <Navbar shouldHideOnScroll onMenuOpenChange={setIsMenuOpen} className="font-primary">
+            <Navbar shouldHideOnScroll onMenuOpenChange={setIsMenuOpen} className="font-primary overflow-hidden">
                 <NavbarContent className="sm:hidden" justify="start">
                     <NavbarMenuToggle aria-label={isMenuOpen ? "Close menu" : "Open menu"} />
                 </NavbarContent>

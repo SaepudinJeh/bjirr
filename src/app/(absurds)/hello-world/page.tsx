@@ -3,6 +3,7 @@
 import Code from "@/components/commons/code.common";
 import LayoutQuote from "@/components/commons/layout_quote.common";
 import NavbarCustom from "@/components/commons/navbar.common";
+import { Snippet } from "@nextui-org/react";
 import { useTheme } from "next-themes";
 import { darcula, gruvboxLight } from "react-syntax-highlighter/dist/esm/styles/prism";
 
@@ -31,8 +32,8 @@ func main() {
                     </Code>
 
                     <div className="text-center mt-10">
-                        <div className="mb-2">
-                            <h1 className="font-semibold italic">Hello Word</h1>
+                        <div className="mb-2 flex flex-col text-center items-center justify-center gap-2">
+                            <Snippet size="sm">Hello Word</Snippet>
                             <span className="text-xs text-gray-600">Bonjour le monde</span>
                         </div>
                         <p className="text-sm">

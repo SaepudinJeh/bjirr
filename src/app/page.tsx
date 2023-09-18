@@ -1,13 +1,8 @@
 "use client"
 
-import {Navbar, NavbarBrand, NavbarContent, NavbarItem, Link, Button, NavbarMenuToggle} from "@nextui-org/react";
-
 import "@/styles/bg_homepage.style.css";
-import { useState } from "react";
 
 export default function Home() {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-
   return (
     <main>
       <div id="bg" />
