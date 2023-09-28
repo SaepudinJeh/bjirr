@@ -2,6 +2,7 @@
 const nextConfig = {
     compress: true,
     images: {
+        // domains: ["drive.google.com"],
         remotePatterns: [
             {
                 protocol: "https",
@@ -9,12 +10,12 @@ const nextConfig = {
                 // port: "",
                 // pathname: "/*"
             },
-            {
-                protocol: "https",
-                hostname: "drive.google.com",
-                // port: "",
-                // pathname: "/*"
-            }
+            // {
+            //     protocol: "https",
+            //     hostname: "drive.google.com",
+            //     // port: "",
+            //     // pathname: "/*"
+            // }
         ]
     }
 }
