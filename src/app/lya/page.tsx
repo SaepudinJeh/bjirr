@@ -1,10 +1,10 @@
 import React from "react";
-import Image, { StaticImageData } from "next/image";
+import Image from "next/image";
 import { Metadata, ResolvingMetadata } from "next";
 
-import LayoutQuote from '../../components/commons/layout_quote.common'
-import PuisiPertamaLya from "@/assets/images/lya/puisi_pertama.jpg"
-import LyaPicture from "@/assets/images/lya/lya.jpg"
+import LayoutQuote from '../../components/commons/layout_quote.common';
+import PuisiPertamaLya from "@/assets/images/lya/puisi_pertama.jpg";
+import LyaPicture from "@/assets/images/lya/lya.jpg";
 
 export default function Lya({ }) {
     return (
@@ -20,7 +20,7 @@ export default function Lya({ }) {
                     <Image src={LyaPicture} alt="Linda Amelia Putri" height={500} width={500} className="sm:h-60 sm:w-60 w-40 h-40 rounded-full object-cover my-7 shadow-md shadow-amber-600" />
 
                     <p>
-                        <b>LINDA AMELIA PUTRI</b> itu nama lengkapnya, nyatanya kadang aku manggil dia dengan  <b>`Lia`</b> atau <b>`Sei`</b>, untuk Sei itu khusus aku dan Lia aja yang tau. Ada beberapa pertanyaan yang sering aku dapetin ketika aku bersama Lia, "Kamu dapetin darimana?", "Ketemu dimana?" jawabanku akan selalu sama, yaitu <b>dapet dari jalur langit</b>.
+                        <b>LINDA AMELIA PUTRI</b> itu nama lengkapnya, nyatanya kadang aku manggil dia dengan  <b>&quot;Lia&quot;</b> atau <b>&quot;Sei&quot;</b>, untuk Sei itu khusus aku dan Lia aja yang tau. Ada beberapa pertanyaan yang sering aku dapetin ketika aku bersama Lia, &quot;Kamu dapetin darimana?&quot;, &quot;Ketemu dimana?&quot; jawabanku akan selalu sama, yaitu <b>dapet dari jalur langit</b>.
                     </p>
                     <p>
                         Percayalah Lia itu mahkluk idup dia bernapas dengan paru-paru layaknya manusia pada umumnya dan dia mencintai pekerjaanya saat ini, yaitu kuliah. Ya walaupun dia kadang agak brutal juga ketika menghadapi banyak tantangan seperti tugas. Hari ini tanggal 13 Januari 2024 Lia masih sibuk ngerjain skripsi dan sekarang seperti yang aku ketahui Lia sedang ngerjain BAB 5 dan fokus mencari jurnal buat referensi. Kadang aku mendengar dia <i>misuh-misuh</i>, mungkin faktor kesel ato capek seh. Yahh... derita mahasiswa kebanyakan ketika mengerjakan skripsi.
@@ -33,13 +33,13 @@ export default function Lya({ }) {
                     </p>
 
                     <p className="">
-                        <i>"Lia aku akan menyembuhkanmu."</i>
+                        <i>&quot;Lia aku akan menyembuhkanmu.&quot;</i>
                     </p>
 
                     <p>Itu yang bisa aku katakan ke Lia pertama kali.</p>
 
                     <p>
-                        <i>"Kaakaaaa."</i>
+                        <i>&quot;Kaakaaaa.&quot;</i>
                     </p>
 
                     <p>Itu suara termeduh yang sudah pernah aku dengar untuk saat ini.</p>

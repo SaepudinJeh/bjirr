@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 interface RightChatProps {
     message: string;
     photo?: string;
@@ -15,7 +17,7 @@ export default function RightChat({ message, time, photo }: RightChatProps) {
             </div>
             <div className="flex-shrink-0 h-8 w-8 sm:h-10 sm:w-10 rounded-full bg-gray-300">
                 {photo ? (
-                    <img src={photo} alt="photo" />
+                    <Image src={photo} alt="photo" fill />
                 ) : null}
             </div>
         </div>
