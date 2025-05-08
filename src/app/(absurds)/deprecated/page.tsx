@@ -1,5 +1,10 @@
 import LayoutQuote from "@/components/commons/layout_quote.common";
 import NavbarCustom from "@/components/commons/navbar.common";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+    title: "Deprecated | 25/02/2025 21:10"
+}
 
 export default function Deprecated() {
     return (
@@ -11,7 +16,7 @@ export default function Deprecated() {
                 <div className="mt-7 flex flex-col gap-2">
                     <p>Sejujurnya sudah lama sekali aku tidak menulis. Di History Git-ku tercatat terakhir kali tersentuh 17 bulan yang lalu. Semua package library di framework ini mungkin sudah banyak yang deprecated ketika diupgrade. Nyatanya sudah aku coba, semuanya error dan semuanya berantakan. Rasanya ingin buat dari awal lagi. Itu tidak akan terjadi. Biarlah seperti itu. Malas</p>
 
-                    <p>Dari sini aku mulai berfikir apakah semua mimpi, harapan, kenginan apakah akan deprecated ketika seiring berjalannya waktu. Apakah grow up termasuk upgrade diri? apakah semua mimpi dan harapan tidak akan deprecated? apakah akan pindah haluan? Membuat mimpi baru? Harapan baru? apakah semuanya akan terulang-ulang mengikuti keputusan yang telah kita ambil. Lifecycle yang buruk. Aku tau itu.</p>
+                    <p>Dari sini aku mulai berfikir apakah semua mimpi, harapan, kenginan apakah akan deprecated ketika seiring berjalannya waktu. Apakah grow up termasuk upgrade? apakah semua mimpi dan harapan tidak akan deprecated? apakah akan pindah haluan? Membuat mimpi baru? Harapan baru? apakah semuanya akan terulang-ulang mengikuti keputusan yang telah kita ambil. Lifecycle yang buruk. Aku tau itu.</p>
 
                     <p>Aku selalu berpegang teguh dengan <b>Aku yang sekarang harus nyenengin aku yang akan datang, dan aku yang akan datang harus nyenengin aku yang sekarang</b>, intinya apa yang akan aku lakukan dan keputusan apa yang aku ambil sekarang harus menentukan aku yang akan datang dan apa yang aku lakukan di masa mendatang harus menyenangkan aku yang sekarang. Dan kau tau aku baru saja membeli <i>Nintendo Switch</i>, sebuah <i>console handheld</i>.</p>
 

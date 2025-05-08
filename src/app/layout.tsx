@@ -9,7 +9,7 @@ const javanese = Noto_Sans_Javanese({ subsets: ["javanese"], display: "swap", va
 
 const metaDesc: string = "Wkwkwkw";
 
-const metaTitle: string = 'Bjirr | Wkwkwkw: Awokwokwok!';
+const metaTitle: string = 'Bjirrlah... wkwkw';
 
 export const metadata: Metadata = {
   title: metaTitle,
