@@ -1,17 +1,11 @@
 "use client";
 
 import useMemeStore from '@/stores/meme.store';
-import type { Metadata } from 'next';
 import { Playfair_Display, EB_Garamond } from 'next/font/google';
 import Link from 'next/link';
 
 const ebGaramond = EB_Garamond({ subsets: ['latin'], display: 'swap' });
 const playfairDisplay = Playfair_Display({ subsets: ['latin'], display: 'swap' });
-
-export const metadata: Metadata = {
-  title: 'Dokumen dengan Daftar Isi',
-  description: 'Contoh implementasi daftar isi dengan Next.js',
-};
 
 export default function RootLayout({
   children,
